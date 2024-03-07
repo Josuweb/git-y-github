@@ -2,3 +2,10 @@
     color: black;
     background-color:red;
 }
+
+#cabecera{
+    background-color: greenyellow;
+    border: solid 5px red;
+    color: black;
+    font-size: 16px;
+}
