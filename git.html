@@ -6,13 +6,20 @@
 </head>
 <body>
 
+  <header id="cabecera">
+    <p>CABECERA</p>
+  </header>
+
+  <main>
+    <h1> Mi primera chamba </h1>
+  </main>
+
   <footer id="footer">
     <p>
       PIE DE PÁGINA
     </p>
   </footer>
-	<h1> Mi primera chamba </h1>
-    <p> Recuerdo el día cuando te conocí</p>
+	
     <!--
 
    1  pwd = Saber en el directorio donde estas
@@ -24,32 +31,39 @@
    5  touch *vacio.txt* = Crear un archivo vacio
    6  cat *vacio.txt* = Muestra lo que contiene
 
-   *EN DIRECTORIO PASO 1*
+*EN DIRECTORIO PASO 1*
    7  git init = Inicia GIT - GIT - GIT
 
-   *EN PREPARACIÓN O STAGING - PASO 2*
+*EN PREPARACIÓN O STAGING - PASO 2*
    8  git add *nombre de carpeta o archivo* = Agrega este para hacer commit
+
    *EN REPOSITORIO LOCAL - PASO 3*
    9  git commit -m "Este es el primer commit de este archivo" = Envio de primer commit
    PD = 8 y 9 git commit -am "comentarios" = pasos 8 y 9 unificados 
 
-   
+
    10  git add *vacio.txt* = Agrega nuevamente para hacer otro commit
    11  git commit -m "Cambie mi h1" = Envio de otros cambios
    
    
    12  git log *vacio.txt* = Muestra historial de cambios en el archivo
    13  git show *vacio.txt* = Muestra las diferencias de los cambios
-   14  git status = muestra los archivos que fueron modificados y no se han guardado
+   14  git status = muestra si hay archivos que no se han modificados o guardado
 
    15  git diff (*commit versión* + espacio + *commit versión*)... = para comparar 2 versiones en particular
    16  git reset *commit versión* --hard = Volver a esa versión anterior
 
 
-   17  git checkout *rama* = volver a version de otra rama
-   17  git checkout master o cabecera = volver a version de otra rama
-   18  git branch = conocer el nombre de la rama donde está
+*PARA CREAR VARIAS RAMAS DE MODIFICACIONES Y FUSIONAR*
+   17  git branch *nombre de la rama nueva* = Crear una rama nueva
+   17  git branch = consultar en que rama está.
+   PD = Se puede crear una rama por cada estructura de cambios, por ejemplo para cabecera, tablas, contenido, diseño de contenido, etc.
+
+   18  git checkout checkout o *otra rama* = volver a esa version de rama para seguir haciendo cambios
+
    19  git merge = combinar o fusionar 2 versiones (cabecera y master)
+   PD = La fusión se hace desde master = git merge *otra rama*
+
 
    20  git Push = Enviar a GitHub.
    21  git Pull = Traer de GitHub.
