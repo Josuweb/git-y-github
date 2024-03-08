@@ -70,7 +70,7 @@
    00  history = Muestra el historial de comandos git
 
 
-  *INICIACIÓN DE GITHUB*
+*INICIACIÓN DE GITHUB*
    00  PARA CONECTAR CON GITHUB, CREAR UNA LLAVE PRIVADA POR DISPOSITIVO Y PUBLICA 
    00  LLAVES SE COLOCAN EN HOME DEL USUARIO LOCAL Y NO EN LA CARPETA DE PROYECTO
    00  SE DEBE CREAR UN REPOSITORIO EN GITHUB PARA CONECTAR A GIT
@@ -81,17 +81,23 @@
    22  git pull origin main = Enviar Cambios de GitHub a Git.
 
 
-  *SABER LAS ID DE LAS VERSIONES INTERNAS DE COMMIT*
+*SABER LAS ID MAS CORTO DE LAS VERSIONES INTERNAS DE LOS COMMIT*
    23  git log --all --graph --decorate --oneline"
 
 
-  *CREAR ALIAS PARA LLAMAR COMANDOS MÁS RAPIDO*
+*CREAR ALIAS PARA LLAMAR COMANDOS MÁS RAPIDO*
    24  alias *nombredealias*="comando"
    24  alias miscambios="git log --all --graph --decorate --oneline"
 
 
-  *CREAR VERSIONES EXTERNAS OFICIALES EN GITHUB DE LOS COMMIT = V.1 ...*
-   25   
+*CREAR VERSIONES EXTERNAS OFICIALES EN GITHUB DE LOS COMMIT = V.1 ...*
+   25  git tag -a *versión oficial* -m "Comentarios" *id commit*
+   25  git tag -a v0.1 -m "Primera entrega oficial" 994b1ce
+
+  
+*SUBIR RAMAS O BRANCH A GITHUB*
+   26
+
 
    Configuración técnicas
    0  git config
