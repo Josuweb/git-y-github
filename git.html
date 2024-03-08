@@ -57,6 +57,7 @@
    16  git reset *commit versión* --hard = Volver a esa versión anterior
 
 
+
 *PARA CREAR VARIAS RAMAS DE MODIFICACIONES Y FUSIONAR*
    17  git branch *nombre de la rama nueva* = Crear una rama nueva
    17  git branch = consultar en que rama está.
@@ -70,6 +71,7 @@
    00  history = Muestra el historial de comandos git
 
 
+
 *INICIACIÓN DE GITHUB*
    00  PARA CONECTAR CON GITHUB, CREAR UNA LLAVE PRIVADA POR DISPOSITIVO Y PUBLICA 
    00  LLAVES SE COLOCAN EN HOME DEL USUARIO LOCAL Y NO EN LA CARPETA DE PROYECTO
@@ -77,12 +79,14 @@
    00  DEBIDO A ACTUALIZACIONES "MASTER" CAMBIO A "MAIN"
 
    20  git remote add origin https://github.com/Josuweb/git-y-github.git = Indica donde esta origin
-   21  git push origin main = Enviar Cambios de Git a Github.
-   22  git pull origin main = Enviar Cambios de GitHub a Git.
+   21  git push origin main = Enviar Cambios de rama main de Git a Github.
+   22  git pull origin main = Enviar Cambios de rama main de GitHub a Git.
+
 
 
 *SABER LAS ID MAS CORTO DE LAS VERSIONES INTERNAS DE LOS COMMIT*
    23  git log --all --graph --decorate --oneline"
+
 
 
 *CREAR ALIAS PARA LLAMAR COMANDOS MÁS RAPIDO, es como una variable*
@@ -90,11 +94,13 @@
    24  alias miscambios="git log --all --graph --decorate --oneline"
 
 
+
 *CREAR TAG o VERSIONES EXTERNAS OFICIALES EN GITHUB DE LOS COMMIT = V.1 ...*
    25  git tag -a *versión oficial* -m "Comentarios" *id commit*
    25  git tag -a v0.1 -m "Primera entrega oficial" 994b1ce
    26  git tag = Revisar los tag creados
-   27  git push origin --tags = Enviar los tags a GITHUB
+   27  git push origin --tags = Enviar todos los tags a GITHUB
+   27  git push origin v0.1 = Enviar ese tag a GITHUB
 
    28  git tag -d *versión oficial* = 1er paso para eliminar tag
    29  git push origin :refs/tags/*versión oficial* = 2do paso para eliminar tag
@@ -102,16 +108,30 @@
 
   
 *SUBIR RAMAS O BRANCH A GITHUB*
-   30  git 
+   30  git push origin --branch
+   30  git push origin *nombrerama*
 
 
-   Configuración técnicas
+
+*CLONAR OTROS PROYECTOS DE OTRAS PERSONAS (proyectoExterno)*
+   99  git clone *url https*
+
+
+
+*FLUJO DE TRABAJO = MULTIPLES COLABORADORES*
+  A. Enviar invitación a colaboradores en la config del repositorio del proyecto.
+  B. VER DESDE ESTA CLASE = https://platzi.com/new-home/clases/1557-git-github/19954-configurar-multiples-colaboradores-en-un-repositor/
+  C. Crear FORK para clonar el repositorio original en el del colaborador
+  D. Solicitar PULL REQUEST con los 2 archivos desde GitHub y esperar por el Admin
+
+
+CONFIGURACIONES TÉCNICAS
    0  git config
    0  git config --list
    0  git config --global user.name "Josue Mora"
    0  git config --global user.email "morajosue57@gmail.com"
    0  git config --list
 
- -->>
+ -->
 </body>
 </html>
