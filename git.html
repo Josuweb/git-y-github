@@ -40,7 +40,7 @@
 *EN PREPARACIÓN O STAGING - PASO 2*
    8  git add *nombre de carpeta o archivo* = Agrega este para hacer commit
 
-   *EN REPOSITORIO LOCAL - PASO 3*
+*EN REPOSITORIO LOCAL - PASO 3*
    9  git commit -m "Este es el primer commit de este archivo" = Envio de primer commit
    PD = 8 y 9 git commit -am "comentarios" = pasos 8 y 9 unificados 
 
@@ -76,12 +76,22 @@
    00  SE DEBE CREAR UN REPOSITORIO EN GITHUB PARA CONECTAR A GIT
    00  DEBIDO A ACTUALIZACIONES "MASTER" CAMBIO A "MAIN"
 
-   20  git push origin main = Enviar Cambios de Git a Github.
-   21  git pull origin main = Traer Cambios de GitHub a Git.
+   20  git remote add origin https://github.com/Josuweb/git-y-github.git = Indica donde esta origin
+   21  git push origin main = Enviar Cambios de Git a Github.
+   22  git pull origin main = Enviar Cambios de GitHub a Git.
 
 
+  *SABER LAS ID DE LAS VERSIONES INTERNAS DE COMMIT*
+   23  git log --all --graph --decorate --oneline"
 
 
+  *CREAR ALIAS PARA LLAMAR COMANDOS MÁS RAPIDO*
+   24  alias *nombredealias*="comando"
+   24  alias miscambios="git log --all --graph --decorate --oneline"
+
+
+  *CREAR VERSIONES EXTERNAS OFICIALES EN GITHUB DE LOS COMMIT = V.1 ...*
+   25   
 
    Configuración técnicas
    0  git config
