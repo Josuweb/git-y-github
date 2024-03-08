@@ -90,13 +90,18 @@
    24  alias miscambios="git log --all --graph --decorate --oneline"
 
 
-*CREAR VERSIONES EXTERNAS OFICIALES EN GITHUB DE LOS COMMIT = V.1 ...*
+*CREAR TAG o VERSIONES EXTERNAS OFICIALES EN GITHUB DE LOS COMMIT = V.1 ...*
    25  git tag -a *versión oficial* -m "Comentarios" *id commit*
    25  git tag -a v0.1 -m "Primera entrega oficial" 994b1ce
+   26  git tag = Revisar los tag creados
+   27  git push origin --tags = Enviar los tags a GITHUB
+   28  git tag -d *versión oficial* = 1er paso para eliminar tag
+   29  git push origin :refs/tags/*versión oficial* = 2do paso para eliminar tag
+
 
   
 *SUBIR RAMAS O BRANCH A GITHUB*
-   26
+   29
 
 
    Configuración técnicas
