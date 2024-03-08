@@ -62,7 +62,7 @@
    17  git branch = consultar en que rama está.
    PD = Se puede crear una rama por cada estructura de cambios, por ejemplo para cabecera, tablas, contenido, diseño de contenido, etc.
 
-   18  git checkout checkout o *otra rama* = volver a esa version de rama para seguir haciendo cambios
+   18  git checkout main o *otra rama* = volver a esa version de rama para seguir haciendo cambios
 
    19  git merge = combinar o fusionar 2 versiones (cabecera y main)
    PD = La fusión se hace desde main = git merge *otra rama*
@@ -85,7 +85,7 @@
    23  git log --all --graph --decorate --oneline"
 
 
-*CREAR ALIAS PARA LLAMAR COMANDOS MÁS RAPIDO*
+*CREAR ALIAS PARA LLAMAR COMANDOS MÁS RAPIDO, es como una variable*
    24  alias *nombredealias*="comando"
    24  alias miscambios="git log --all --graph --decorate --oneline"
 
@@ -95,13 +95,14 @@
    25  git tag -a v0.1 -m "Primera entrega oficial" 994b1ce
    26  git tag = Revisar los tag creados
    27  git push origin --tags = Enviar los tags a GITHUB
+
    28  git tag -d *versión oficial* = 1er paso para eliminar tag
    29  git push origin :refs/tags/*versión oficial* = 2do paso para eliminar tag
 
 
   
 *SUBIR RAMAS O BRANCH A GITHUB*
-   29
+   30  git 
 
 
    Configuración técnicas
