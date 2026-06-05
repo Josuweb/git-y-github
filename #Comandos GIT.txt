@@ -1,0 +1,479 @@
+1. `git --version` (ver versión instalada)
+
+2. `git config --global user.name "Tu Nombre"` (configurar tu nombre)
+
+3. `git config --global user.email "tuemail@gmail.com"` (configurar tu correo)
+
+4. `git config --list` (ver configuración actual)
+
+5. `git config --global init.defaultBranch main` (poner `main` como rama inicial por defecto)
+
+6. `git config --global core.editor "code --wait"` (configurar VS Code como editor)
+
+7. `cd nombre-carpeta` (entrar a una carpeta)
+
+8. `mkdir mi-proyecto` (crear una carpeta nueva)
+
+9. `git init` (iniciar Git en una carpeta)
+
+10. `git status` (ver estado del repositorio)
+
+11. `git add archivo.html` (agregar un archivo específico)
+
+12. `git add .` (agregar todos los archivos modificados)
+
+13. `git commit -m "Primer commit"` (guardar cambios con un mensaje)
+
+14. `git commit -am "Actualiza contenido"` (agregar y guardar rápido archivos ya rastreados)
+
+15. `git log` (ver historial completo de commits)
+
+16. `git log --oneline` (ver historial resumido)
+
+17. `git log --oneline --graph --all` (ver historial con ramas)
+
+18. `git diff` (ver cambios antes de agregarlos)
+
+19. `git diff --staged` (ver cambios ya agregados)
+
+20. `git branch` (ver ramas locales)
+
+21. `git branch nombre-rama` (crear una rama nueva)
+
+22. `git checkout nombre-rama` (cambiar a una rama)
+
+23. `git checkout -b nombre-rama` (crear y cambiar a una rama)
+
+24. `git switch nombre-rama` (cambiar a una rama existente)
+
+25. `git switch -c nombre-rama` (crear y cambiar a una rama nueva)
+
+26. `git branch -d nombre-rama` (eliminar una rama local)
+
+27. `git branch -D nombre-rama` (forzar eliminación de una rama local)
+
+28. `git branch -m nuevo-nombre` (renombrar la rama actual)
+
+29. `git switch main` (cambiar a la rama principal)
+
+30. `git merge nombre-rama` (unir una rama con la rama actual)
+
+31. `git merge --abort` (cancelar un merge con conflicto)
+
+32. `git clone URL_DEL_REPOSITORIO` (clonar un repositorio desde GitHub)
+
+33. `git clone https://github.com/usuario/proyecto.git` (ejemplo de clonar repositorio)
+
+34. `git remote -v` (ver repositorios remotos conectados)
+
+35. `git remote add origin https://github.com/usuario/proyecto.git` (conectar proyecto local con GitHub)
+
+36. `git remote set-url origin https://github.com/usuario/proyecto.git` (cambiar URL del repositorio remoto)
+
+37. `git remote remove origin` (eliminar conexión remota)
+
+38. `git branch -M main` (renombrar la rama principal a `main`)
+
+39. `git push -u origin main` (subir primera vez a GitHub y enlazar rama)
+
+40. `git push` (subir cambios a GitHub)
+
+41. `git push -u origin nombre-rama` (subir una rama nueva a GitHub)
+
+42. `git pull` (descargar y fusionar cambios de GitHub)
+
+43. `git pull origin main` (descargar cambios de la rama `main`)
+
+44. `git fetch` (descargar información sin fusionar)
+
+45. `git fetch --all` (actualizar todas las ramas remotas)
+
+46. `git restore archivo.html` (deshacer cambios de un archivo)
+
+47. `git checkout -- archivo.html` (deshacer cambios de un archivo, forma antigua)
+
+48. `git restore --staged archivo.html` (quitar archivo del área de preparación)
+
+49. `git restore --staged .` (quitar todos los archivos del área de preparación)
+
+50. `git reset --hard` (volver al último commit y borrar cambios locales)
+
+51. `git rm archivo.html` (borrar archivo y registrarlo en Git)
+
+52. `git rm -r carpeta` (borrar carpeta y registrarla en Git)
+
+53. `touch .gitignore` (crear archivo `.gitignore`)
+
+54. `git rm --cached archivo` (dejar de rastrear un archivo sin borrarlo localmente)
+
+55. `git rm --cached .env` (dejar de rastrear el archivo `.env`)
+
+56. `git blame archivo.html` (ver quién modificó cada línea)
+
+57. `git show ID_DEL_COMMIT` (ver detalles de un commit)
+
+58. `git show --name-only ID_DEL_COMMIT` (ver archivos modificados en un commit)
+
+59. `git checkout ID_DEL_COMMIT` (volver temporalmente a un commit)
+
+60. `git switch main` (regresar a la rama principal)
+
+61. `git revert ID_DEL_COMMIT` (crear un commit que revierte otro commit)
+
+62. `git reset --soft ID_DEL_COMMIT` (volver a un commit conservando cambios preparados)
+
+63. `git reset --mixed ID_DEL_COMMIT` (volver a un commit dejando cambios sin preparar)
+
+64. `git reset --hard ID_DEL_COMMIT` (volver a un commit y borrar cambios posteriores)
+
+65. `git stash` (guardar cambios temporalmente)
+
+66. `git stash save "Trabajo temporal login"` (guardar cambios temporales con nombre)
+
+67. `git stash list` (ver lista de cambios guardados temporalmente)
+
+68. `git stash pop` (recuperar último stash y eliminarlo de la lista)
+
+69. `git stash apply` (recuperar stash sin eliminarlo de la lista)
+
+70. `git stash drop` (eliminar un stash)
+
+71. `git stash clear` (eliminar todos los stashes)
+
+72. `git branch -r` (ver ramas remotas)
+
+73. `git branch -a` (ver todas las ramas locales y remotas)
+
+74. `git checkout -b nombre-rama origin/nombre-rama` (traer una rama remota)
+
+75. `git switch -c nombre-rama origin/nombre-rama` (traer una rama remota, forma moderna)
+
+76. `git push origin --delete nombre-rama` (eliminar una rama remota)
+
+77. `gh auth login` (iniciar sesión en GitHub CLI)
+
+78. `gh auth status` (ver estado de autenticación en GitHub CLI)
+
+79. `gh repo create nombre-repo --public` (crear repositorio público en GitHub)
+
+80. `gh repo create nombre-repo --private` (crear repositorio privado en GitHub)
+
+81. `gh repo create nombre-repo --public --source=. --remote=origin --push` (crear repo y subir proyecto actual)
+
+82. `gh repo clone usuario/repositorio` (clonar repositorio usando GitHub CLI)
+
+83. `gh repo list` (ver lista de repositorios)
+
+84. `gh pr create --base main --head nombre-rama --title "Título del PR" --body "Descripción del cambio"` (crear Pull Request)
+
+85. `gh pr list` (ver Pull Requests)
+
+86. `gh pr view` (ver detalle de un Pull Request)
+
+87. `gh pr view --web` (abrir Pull Request en navegador)
+
+88. `gh pr merge` (hacer merge de un Pull Request)
+
+89. `gh issue create --title "Error en login" --body "Descripción del problema"` (crear issue)
+
+90. `gh issue list` (ver issues)
+
+91. `gh issue view NUMERO` (ver detalle de un issue)
+
+92. `gh issue close NUMERO` (cerrar issue)
+
+93. `git tag v1.0.0` (crear tag simple)
+
+94. `git tag -a v1.0.0 -m "Primera versión estable"` (crear tag con mensaje)
+
+95. `git tag` (ver tags)
+
+96. `git push origin v1.0.0` (subir tag específico)
+
+97. `git push --tags` (subir todos los tags)
+
+98. `git tag -d v1.0.0` (eliminar tag local)
+
+99. `git push origin --delete v1.0.0` (eliminar tag remoto)
+
+100. `npm install` (instalar dependencias de un proyecto web)
+
+101. `touch .env` (crear archivo `.env`)
+
+102. `npm run dev` (levantar proyecto web en modo desarrollo)
+
+103. `git restore .` (cancelar todos los cambios locales no preparados)
+
+104. `git reset --hard HEAD` (volver exactamente al último commit)
+
+105. `git reflog` (ver historial avanzado, incluso commits perdidos)
+
+106. `git checkout ID_DEL_COMMIT` (entrar a un commit perdido o antiguo)
+
+107. `git switch -c recuperacion` (crear rama desde un commit recuperado)
+
+108. `git switch main && git pull origin main` (ir a `main` y actualizarla)
+
+109. `git switch -c feature/nueva-funcion` (crear rama profesional para una nueva función)
+
+110. `git push -u origin feature/nueva-funcion` (subir rama de nueva función)
+
+111. `git switch -c fix/error-login` (crear rama para corregir error)
+
+112. `git switch -c docs/readme` (crear rama para documentación)
+
+113. `git commit -m "Agrega formulario de login"` (ejemplo de commit claro)
+
+114. `git commit -m "Corrige validación de email"` (ejemplo de commit para corrección)
+
+115. `git commit -m "Actualiza estilos del navbar"` (ejemplo de commit para estilos)
+
+116. `git commit -m "Agrega documentación inicial"` (ejemplo de commit para documentación)
+
+117. `git status && git add . && git commit -m "Mensaje" && git push` (flujo rápido para subir cambios)
+
+118. `mkdir mi-proyecto && cd mi-proyecto && git init` (crear carpeta, entrar e iniciar Git)
+
+119. `touch index.html` (crear archivo `index.html`)
+
+120. `git add . && git commit -m "Primer commit"` (agregar y guardar primer commit)
+
+121. `git branch -M main && git remote add origin URL && git push -u origin main` (conectar y subir proyecto a GitHub)
+
+122. `git pull origin main && git switch -c feature/nombre` (actualizar `main` y crear rama de trabajo)
+
+123. `git add . && git commit -m "Describe el cambio" && git push` (guardar y subir cambios normales)
+
+124. `git status && git log --oneline` (revisar estado e historial rápido)
+
+125. `git clean -fd` (eliminar archivos no rastreados)
+
+126. `git clean -n` (ver qué archivos no rastreados se eliminarían sin borrarlos)
+
+127. `git remote rename origin github` (renombrar remoto)
+
+128. `git remote show origin` (ver información detallada del remoto)
+
+129. `git pull --rebase` (actualizar cambios usando rebase)
+
+130. `git rebase main` (reaplicar commits de tu rama encima de `main`)
+
+131. `git rebase --abort` (cancelar rebase)
+
+132. `git rebase --continue` (continuar rebase después de resolver conflictos)
+
+133. `git cherry-pick ID_DEL_COMMIT` (traer un commit específico a tu rama actual)
+
+134. `git commit --amend -m "Nuevo mensaje"` (cambiar el mensaje del último commit)
+
+135. `git push --force-with-lease` (forzar subida de forma más segura)
+
+136. `git shortlog -sn` (ver autores y cantidad de commits)
+
+137. `git archive --format zip --output proyecto.zip main` (crear zip del proyecto desde Git)
+
+138. `gh repo view --web` (abrir repositorio actual en GitHub)
+
+139. `gh repo fork` (hacer fork de un repositorio)
+
+140. `gh release create v1.0.0` (crear release en GitHub)
+
+141. `gh release list` (ver releases)
+
+142. `gh release delete v1.0.0` (eliminar release)
+
+143. `gh workflow list` (ver workflows de GitHub Actions)
+
+144. `gh workflow run nombre-workflow.yml` (ejecutar workflow manualmente)
+
+145. `gh run list` (ver ejecuciones de GitHub Actions)
+
+146. `gh run watch` (ver progreso de una ejecución)
+
+147. `gh run view --log` (ver logs de una ejecución)
+
+148. `git config --global alias.st status` (crear alias `git st` para `git status`)
+
+149. `git config --global alias.co checkout` (crear alias `git co` para `git checkout`)
+
+150. `git config --global alias.br branch` (crear alias `git br` para `git branch`)
+
+151. `git config --global alias.cm "commit -m"` (crear alias `git cm` para commits rápidos)
+
+152. `git config --global alias.lg "log --oneline --graph --all"` (crear alias para historial visual)
+
+153. `git st` (usar alias para ver estado)
+
+154. `git lg` (usar alias para ver historial visual)
+
+155. `git config --global --unset user.name` (eliminar nombre configurado)
+
+156. `git config --global --unset user.email` (eliminar correo configurado)
+
+157. `git config --global credential.helper store` (guardar credenciales)
+
+158. `git config --global credential.helper cache` (guardar credenciales temporalmente)
+
+159. `git config --global core.autocrlf true` (configuración recomendada para saltos de línea en Windows)
+
+160. `git config --global core.autocrlf input` (configuración recomendada para Mac/Linux)
+
+161. `git ls-files` (ver archivos rastreados por Git)
+
+162. `git ls-files --others --ignored --exclude-standard` (ver archivos ignorados)
+
+163. `git diff HEAD~1 HEAD` (ver diferencia entre el último commit y el anterior)
+
+164. `git diff main nombre-rama` (comparar dos ramas)
+
+165. `git log --author="Nombre"` (ver commits de un autor)
+
+166. `git log --since="2026-01-01"` (ver commits desde una fecha)
+
+167. `git log --until="2026-12-31"` (ver commits hasta una fecha)
+
+168. `git log -- archivo.html` (ver historial de un archivo)
+
+169. `git mv viejo.html nuevo.html` (renombrar archivo con Git)
+
+170. `git bisect start` (iniciar búsqueda de commit problemático)
+
+171. `git bisect bad` (marcar commit actual como malo)
+
+172. `git bisect good ID_DEL_COMMIT` (marcar commit antiguo como bueno)
+
+173. `git bisect reset` (terminar búsqueda bisect)
+
+174. `git submodule add URL carpeta` (agregar submódulo)
+
+175. `git submodule update --init --recursive` (inicializar submódulos)
+
+176. `git pull --recurse-submodules` (actualizar proyecto con submódulos)
+
+177. `git describe --tags` (ver versión basada en tags)
+
+178. `git config --global pull.rebase false` (hacer que `git pull` use merge por defecto)
+
+179. `git config --global pull.rebase true` (hacer que `git pull` use rebase por defecto)
+
+180. `git config --global push.autoSetupRemote true` (hacer que Git configure remoto automáticamente al hacer push)
+
+181. `git rev-parse --show-toplevel` (ver ruta raíz del repositorio)
+
+182. `git rev-parse --abbrev-ref HEAD` (ver nombre de la rama actual)
+
+183. `git count-objects -vH` (ver tamaño del repositorio local)
+
+184. `git gc` (limpiar y optimizar repositorio local)
+
+185. `git fsck` (revisar integridad del repositorio)
+
+186. `git update-index --assume-unchanged archivo` (ignorar cambios locales temporalmente)
+
+187. `git update-index --no-assume-unchanged archivo` (volver a rastrear cambios locales)
+
+188. `git sparse-checkout init` (iniciar descarga parcial de repositorio)
+
+189. `git sparse-checkout set carpeta` (descargar solo una carpeta específica)
+
+190. `git clone --depth 1 URL` (clonar solo la última versión del repositorio)
+
+191. `git clone --branch nombre-rama URL` (clonar una rama específica)
+
+192. `git clone --single-branch --branch nombre-rama URL` (clonar solo una rama)
+
+193. `git push origin main --force-with-lease` (forzar actualización de `main` con protección)
+
+194. `git push origin HEAD` (subir la rama actual)
+
+195. `git pull origin nombre-rama` (traer cambios de una rama específica)
+
+196. `git fetch origin nombre-rama` (descargar una rama específica sin fusionar)
+
+197. `git merge origin/main` (fusionar cambios descargados de `main`)
+
+198. `git reset --hard origin/main` (hacer que tu rama local quede igual que `origin/main`)
+
+199. `git remote prune origin` (limpiar ramas remotas que ya no existen)
+
+200. `git branch --merged` (ver ramas ya fusionadas)
+
+201. `git branch --no-merged` (ver ramas no fusionadas)
+
+202. `git log --stat` (ver historial con estadísticas de archivos)
+
+203. `git log -p` (ver historial con cambios línea por línea)
+
+204. `git show HEAD` (ver detalles del último commit)
+
+205. `git show HEAD~1` (ver detalles del commit anterior)
+
+206. `git reset HEAD~1` (deshacer último commit conservando cambios)
+
+207. `git reset --hard HEAD~1` (eliminar último commit y sus cambios)
+
+208. `git revert HEAD` (revertir último commit de forma segura)
+
+209. `git stash push -m "Mensaje del stash"` (guardar cambios temporales con mensaje moderno)
+
+210. `git stash pop stash@{0}` (recuperar un stash específico)
+
+211. `git stash apply stash@{0}` (aplicar un stash específico sin borrarlo)
+
+212. `git stash show` (ver resumen del último stash)
+
+213. `git stash show -p` (ver cambios completos del stash)
+
+214. `git worktree add ../otra-carpeta nombre-rama` (trabajar otra rama en otra carpeta)
+
+215. `git worktree list` (ver worktrees)
+
+216. `git worktree remove ../otra-carpeta` (eliminar worktree)
+
+217. `gh pr checkout NUMERO` (descargar y entrar a una rama de un Pull Request)
+
+218. `gh pr status` (ver estado de tus Pull Requests)
+
+219. `gh pr diff` (ver diferencias del Pull Request)
+
+220. `gh pr review --approve` (aprobar Pull Request)
+
+221. `gh pr review --request-changes` (pedir cambios en Pull Request)
+
+222. `gh issue comment NUMERO --body "Comentario"` (comentar en un issue)
+
+223. `gh pr comment NUMERO --body "Comentario"` (comentar en un Pull Request)
+
+224. `gh repo delete usuario/repositorio` (eliminar repositorio de GitHub)
+
+225. `gh repo edit --visibility private` (cambiar repositorio a privado)
+
+226. `gh repo edit --visibility public` (cambiar repositorio a público)
+
+227. `gh api user` (ver información de tu usuario desde API de GitHub)
+
+228. `gh codespace list` (ver Codespaces)
+
+229. `gh codespace create` (crear Codespace)
+
+230. `gh codespace ssh` (entrar a Codespace por SSH)
+
+231. `ssh-keygen -t ed25519 -C "tuemail@gmail.com"` (crear llave SSH)
+
+232. `cat ~/.ssh/id_ed25519.pub` (ver llave pública SSH)
+
+233. `ssh -T git@github.com` (probar conexión SSH con GitHub)
+
+234. `git remote set-url origin git@github.com:usuario/repositorio.git` (cambiar remoto HTTPS a SSH)
+
+235. `git clone git@github.com:usuario/repositorio.git` (clonar usando SSH)
+
+236. `echo "# Mi Proyecto" >> README.md` (crear o agregar título al README)
+
+237. `git add README.md` (agregar README)
+
+238. `git commit -m "Agrega README"` (guardar README)
+
+239. `git push origin main` (subir a `main`)
+
+240. `code .` (abrir proyecto en VS Code)
